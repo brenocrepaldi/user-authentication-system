@@ -1,7 +1,11 @@
 class UserView:
     @staticmethod
     def get_username():
-        return input("user: ")
+        user = input("user: ").strip()
+        if user:
+            return user
+        else:
+            return False
 
     @staticmethod
     def get_email():
@@ -21,4 +25,4 @@ class UserView:
 
     @staticmethod
     def show_error(error):
-        print(error)
+        print(f"Error: {error}")
