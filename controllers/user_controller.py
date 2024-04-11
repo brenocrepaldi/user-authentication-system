@@ -3,10 +3,8 @@ from views.user_view import UserView
 
 
 class UserController:
-    def __init__(self):
-        pass
-
-    def authenticate_user(self):
+    @classmethod
+    def authenticate_user(cls):
         UserView.show_message("creating new user...")
 
         username = UserView.get_username()
@@ -32,3 +30,16 @@ class UserController:
                     return UserView.show_message("Maximum attempts reached. Exiting...")
                 else:
                     UserView.show_message("Passwords don't match. Please try again.")
+
+        cls.create_user(username, email, password)
+
+    @classmethod
+    def create_user(cls, username, email, password):
+        User(username, email, password)
+        UserView.show_message(f"authenticated user: {username}")
+        cls.show_users_list()
+
+    def show_users_list():
+        users = User.users_list
+        for user in users:
+            UserView.show_user(user["username"], user["email"])

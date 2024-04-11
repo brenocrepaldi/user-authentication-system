@@ -1,8 +1,17 @@
 class User:
-    def __init__(self, username, email, password) -> None:
+    users_list = []
+
+    def __init__(self, username, email, password):
         self.username = username
         self._email = email
-        self.password = password
+        self._password = password
+        self.users_list.append(
+            {
+                "username": self.username,
+                "email": self._email,
+                "password": self._password,
+            }
+        )
 
-    def __str__(self) -> str:
-        print(f"user: {self.username}, email: {self._email}")
+    def __str__(self):
+        return f"user: {self.username}, email: {self._email}"

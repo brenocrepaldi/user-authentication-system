@@ -38,3 +38,7 @@ class UserView:
     @staticmethod
     def show_error(error):
         print(f"Error: {error}")
+
+    @staticmethod
+    def show_user(user, email):
+        print(f"user: {user}, email: {email}")
