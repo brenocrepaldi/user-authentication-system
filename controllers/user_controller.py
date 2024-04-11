@@ -6,9 +6,9 @@ class UserController:
     def __init__(self):
         pass
 
-    def authenticate_user():
+    def authenticate_user(self):
         UserView.show_message("creating new user...")
         username = UserView.get_username()
         email = UserView.get_email()
-        password = UserView.create_password_input()
-        password_verification = UserView.confirm_password_input()
+        password = UserView.get_password()
+        password_verification = UserView.confirm_password()

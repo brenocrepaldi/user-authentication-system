@@ -1,8 +1,8 @@
-from controllers.user_controller import Auth
+from controllers.user_controller import UserController
 
 
 def main():
-    auth = Auth()
+    auth = UserController()
     auth.authenticate_user()
 
 
