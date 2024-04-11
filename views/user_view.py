@@ -9,15 +9,27 @@ class UserView:
 
     @staticmethod
     def get_email():
-        return input("email: ")
+        email = input("email: ").strip()
+        if email:
+            return email
+        else:
+            return False
 
     @staticmethod
     def get_password():
-        return input("password: ")
+        password = input("password: ").strip()
+        if password:
+            return password
+        else:
+            return False
 
     @staticmethod
     def confirm_password():
-        return input("confirm password: ")
+        password = input("confirm password: ").strip()
+        if password:
+            return password
+        else:
+            return False
 
     @staticmethod
     def show_message(message):
