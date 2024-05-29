@@ -51,9 +51,14 @@ export function App() {
 
 			const result = await response.json();
 			setResponseMessage(result.message || "User authenticated successfully");
-		} catch (error: any) {
-			console.error("Error submitting data:", error);
-			setResponseMessage(error.message || "Error submitting data");
+		} catch (error: unknown) {
+			if (error instanceof Error) {
+				console.error("Error submitting data:", error);
+				setResponseMessage(error.message || "Error submitting data");
+			} else {
+				console.error("Unknown error:", error);
+				setResponseMessage("Unknown error occurred");
+			}
 		}
 	};
 
