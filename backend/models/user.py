@@ -1,3 +1,4 @@
+# models/user.py
 class User:
     users_list = []
 
