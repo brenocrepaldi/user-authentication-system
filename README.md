@@ -1,4 +1,4 @@
-# User System Authentication
+# User Authentication System
 
 ## Description
 This project is a full-stack web application that provides authentication functionality. Users can sign up.
@@ -13,7 +13,6 @@ This project is a full-stack web application that provides authentication functi
 - React (JavaScript)
 - TypeScript
 - HTML/CSS
-- SQLite (for database)
 
 ## Installation
 1. Clone the repository: 
