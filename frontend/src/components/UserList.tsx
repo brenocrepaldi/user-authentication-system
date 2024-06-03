@@ -34,14 +34,14 @@ export function UserList() {
 		<div className="w-[1000px] h-auto bg-zinc-800 gap-8 p-8 rounded-lg flex flex-col items-center justify-between">
 			<button
 				onClick={showUserList}
-				className="bg-zinc-700 text-white p-2 pt-1 pb-1 rounded-sm w-full h-[45px] hover:bg-zinc-600 transition-colors duration-200 ease-in-out"
+				className="bg-zinc-700 text-white p-2 pt-1 pb-1 rounded-sm w-[375px] h-[45px] hover:bg-zinc-600 transition-colors duration-200 ease-in-out"
 			>
 				Show user list
 			</button>
 
 			{error && <p className="text-white">Error: {error}</p>}
 			{userList.length > 0 && (
-				<ul className="w-full bg-zinc-700 p-8 rounded-lg flex flex-col items-center justify-between h-auto gap-3">
+				<ul className="w-full bg-zinc-700 p-8 rounded-lg flex flex-col items-center justify-between h-auto gap-2">
 					<li className="flex gap-2">
 						<span className="text-white bg-zinc-500 w-[450px] h-[50px] rounded-md px-4 flex items-center justify-center">
 							Username
