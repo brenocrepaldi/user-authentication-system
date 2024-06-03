@@ -5,10 +5,10 @@ export default defineConfig({
 	plugins: [react()],
 	server: {
 		proxy: {
-			"/login": {
+			"/user": {
 				target: "http://127.0.0.1:5000",
 				changeOrigin: true,
-				rewrite: (path) => path.replace(/^\/login/, "/login"),
+				rewrite: (path) => path.replace(/^\/user/, "/user"),
 			},
 		},
 	},

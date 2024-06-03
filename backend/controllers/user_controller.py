@@ -49,4 +49,4 @@ class UserController:
     @classmethod
     def show_users_list(cls):
         users = User.users_list
-        return jsonify(users)
+        return users
