@@ -13,7 +13,6 @@ This project is a full-stack web application that provides authentication functi
 - React (JavaScript)
 - TypeScript
 - HTML/CSS
-- SQLite (for database)
 
 ## Installation
 1. Clone the repository: 
