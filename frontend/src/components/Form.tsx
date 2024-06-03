@@ -118,7 +118,7 @@ export function Form() {
 				/>
 				<button
 					type="submit"
-					className="bg-blue-500 text-white p-2 pt-1 pb-1 rounded-sm w-[350px] h-[45px] transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-blue-900 transition-colors duration-200 ease-in-out"
+					className="bg-blue-500 text-white p-2 pt-1 pb-1 rounded-sm w-[350px] h-[45px] transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-blue-900"
 				>
 					Submit
 				</button>
