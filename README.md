@@ -1,4 +1,4 @@
-# User System Authentication
+# User Authentication System
 
 ## Description
 This project is a full-stack web application that provides authentication functionality. Users can sign up.
