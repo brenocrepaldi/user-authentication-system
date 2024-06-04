@@ -20,7 +20,7 @@ export function UserList() {
 				throw new Error("Failed to fetch user list");
 			}
 			const data = await response.json();
-			setUserList(data);
+			setUserList(data.reverse());
 			if (data.length === 0) {
 				setNoUserFound(true);
 			} else {
