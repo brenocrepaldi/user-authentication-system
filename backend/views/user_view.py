@@ -1,3 +1,4 @@
+# views/user_view.py
 class UserView:
     @staticmethod
     def show_message(message):

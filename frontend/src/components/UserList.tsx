@@ -13,7 +13,7 @@ export function UserList() {
 
 	const showUserList = async () => {
 		try {
-			const response = await fetch("/user", {
+			const response = await fetch("/user/list", {
 				method: "GET",
 			});
 			if (!response.ok) {

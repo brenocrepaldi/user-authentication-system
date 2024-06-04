@@ -1,3 +1,4 @@
+# controllers/user_controller.py
 from flask import jsonify
 
 from backend.models.user import User

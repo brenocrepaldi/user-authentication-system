@@ -5,10 +5,16 @@ export default defineConfig({
 	plugins: [react()],
 	server: {
 		proxy: {
-			"/user": {
+			"/user/authenticate": {
 				target: "http://127.0.0.1:5000",
 				changeOrigin: true,
-				rewrite: (path) => path.replace(/^\/user/, "/user"),
+				rewrite: (path) =>
+					path.replace(/^\/user\/authenticate/, "/user/authenticate"),
+			},
+			"/user/list": {
+				target: "http://127.0.0.1:5000",
+				changeOrigin: true,
+				rewrite: (path) => path.replace(/^\/user\/list/, "/user/list"),
 			},
 		},
 	},

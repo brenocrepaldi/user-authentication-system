@@ -31,7 +31,7 @@ export function Form() {
 		event.preventDefault();
 
 		try {
-			const response = await fetch("/user", {
+			const response = await fetch("/user/authenticate", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
