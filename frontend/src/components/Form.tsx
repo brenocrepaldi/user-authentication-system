@@ -87,7 +87,7 @@ export function Form() {
 				className="flex flex-col gap-8 justify-center items-center"
 			>
 				<div
-					className={`mt-4 p-4 rounded-lg text-white w-[555px] h-[45px] flex items-center justify-center transition ${handleBackgroundColor()}`}
+					className={`mt-4 p-4 rounded-lg text-white text-lg w-[555px] h-[45px] flex items-center justify-center transition ${handleBackgroundColor()}`}
 				>
 					{responseMessage || "Complete the fields"}
 				</div>
@@ -118,7 +118,7 @@ export function Form() {
 				/>
 				<button
 					type="submit"
-					className="bg-blue-500 text-white p-2 pt-1 pb-1 rounded-sm w-[350px] h-[45px] transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-blue-900"
+					className="bg-blue-500 text-white text-lg p-2 pt-1 pb-1 rounded-sm w-[350px] h-[45px] transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-blue-900"
 				>
 					Submit
 				</button>
