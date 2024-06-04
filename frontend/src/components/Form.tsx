@@ -81,10 +81,10 @@ export function Form() {
 	};
 
 	return (
-		<div className="w-[1000px] min-h-[550px] bg-zinc-800 p-8 rounded-lg flex flex-col items-center">
+		<div className="w-[1000px] min-h-[500px] bg-zinc-800 p-8 rounded-lg flex flex-col items-center">
 			<form
 				onSubmit={getUserCredentials}
-				className="flex flex-col gap-8 justify-center items-center"
+				className="flex flex-col gap-5 justify-center items-center"
 			>
 				<div
 					className={`mt-4 p-4 rounded-lg text-white text-lg w-[555px] h-[45px] flex items-center justify-center transition ${handleBackgroundColor()}`}
